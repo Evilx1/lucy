@@ -1,0 +1,326 @@
+@import url('https://fonts.googleapis.com/css2?family=Kode+Mono:wght@400..700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Anta&display=swap');
+
+/* universal css */
+*{
+    margin: 0;
+    padding: 0;
+}
+/* body css */
+body{
+ height: 150vh;
+ background-color: black;
+}
+/* an space left rather than giving margin before nav bar ,i thougt it would be a good idea */
+.upperspace{
+    height: 2vh;
+    width: 100%;
+    /* background-color: rgb(255, 255, 255); */
+}
+/* Page 1 conatiner  */
+.con1{
+  
+     /* background-image: url('img/bg.jpg'); 
+     background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment:fixed; */
+    height: 100vh;
+    width: 100%;
+    /* position: fixed; */
+}
+/* background vedio css */
+.background-vid{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    z-index: -1;
+}
+@media(min-aspect-ratio:16/9){
+    .background-vid{
+        height: auto;
+        width: 100%;
+    }
+}
+@media(max-aspect-ratio:16/9){
+    .background-vid{
+        height: 100%;
+        width: auto;
+    }
+}
+/* logo css LUCY */
+.logo{
+    height: auto;
+    width: 10rem;
+    /* padding-left: 30px; */
+    /* margin: -4px 1px 1px 12px; */
+    /* mix-blend-mode: color-dodge; */
+    /* padding: 1px 1px 1px 1px; */
+}
+/* navigation barr css  here navbox resides  */
+.navbar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    /* background-color: red; */
+    width: 100%;
+    height: 20vh;
+    position: fixed;
+}
+/* main navigation box in which logo and navigation bar resides */
+.main-navbox{
+    width: 70%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: salmon;
+    padding: 20px;
+    border-radius: 50px;
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(209, 55, 55,0));
+    backdrop-filter: blur(7px);
+    -webkit-backdrop-filter: blur(7px);
+    filter: blur(0px);
+    z-index: 100;
+}
+.logo a{
+    text-decoration: none;
+    color: rgb(143, 143, 143);
+    letter-spacing: 2px;
+    transition: all ease-in 0.3s;
+    font-size: 15px;
+}
+.logo a:hover{
+    
+    color: whitesmoke;
+    text-shadow: white 0px 0px 15px;
+}
+
+.nav-item a{
+    font-family: "Kode Mono", monospace;
+    font-size: 15px;
+    letter-spacing: 2px;
+    text-decoration: none;
+    color: rgb(129, 129, 129);
+    padding: 20px;
+    transition: all ease-in 0.3s;
+}
+#twi{
+    letter-spacing: 0px;
+}
+.nav-item a:hover{
+    color: whitesmoke;
+    text-shadow: white 0px 0px 20px;
+}
+.about-me{
+    /* background-color: red; */
+    color: rgb(255, 255, 255);
+    height:100vh;
+    width: 100%;
+}
+.space{
+    width: 100%;
+    height: 17vh;
+    /* background-color: black; */
+}
+.about-me-container{
+    height: 100vh;
+    width: 100%;
+    /* background-color: rgb(0, 143, 199); */
+    display: flex;
+    justify-content: center;
+}
+.about-me-main-container{
+    /* background-color: rgba(255, 255, 255, 0.548); */
+
+    width: 72%;
+    height: 90vh;
+}
+.about-me-btn{
+    font-size: 23px;
+    height: 12vh;
+    width: 20%;
+    cursor: pointer;
+    color: rgb(0, 219, 0);
+    border: 2px solid rgba(0, 218, 0);
+    background-color: rgba(0, 245, 0, 0.136);
+    transition: all ease 0.1s;
+    border-radius: 2px;
+}
+.about-me-btn:hover{
+    color: rgb(0, 219, 0);
+    border: 0px solid transparent;
+    background-color: rgba(0, 255, 0, 0.392);
+    
+}
+.info-about-me{
+    margin-top: 20px;
+    font-family: "Anta", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+.info-about-me h1{
+    
+    font-family: "Anta", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 100px;
+      
+      
+}
+.box{
+    z-index: 50;
+    margin-top: 30px;
+    height: 65vh;
+    width: 100%;
+    /* background-color: black; */
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    /* justify-content: center; */
+    align-items: center;
+}
+.about-me-box{
+    z-index: 50;
+    background: linear-gradient(135deg, rgba(241, 237, 237, 0.1), rgba(247, 237, 237, 0));
+    backdrop-filter: blur(2px);
+    -webkit-backdrop-filter: blur(7px);
+    filter: blur(0px);
+    font-family: "Anta", sans-serif;
+    /* overflow: auto; */
+    padding: 10px;
+    color: rgb(255, 255, 255);
+    height: 45vh;
+    width:25%;
+    /* background-color: white; */
+    border-radius: 10px;
+}
+.about-me-box h2{
+    z-index: 50;
+    font-size: 20px;
+    letter-spacing: 2px;
+    font-weight: 400;
+    font-style: normal;
+    font-weight: 500;
+    
+}
+.skills-content{
+    /* overflow: auto; */
+    font-family: "Anta", sans-serif;
+    margin-top: 7px;
+    padding: 8px;
+    border: 2px solid black;
+    border-radius: 10px;
+    display: inline-block;
+    margin-left: 10px;
+    font-weight: 400;
+    font-style: normal;
+}
+.skills-content2{
+    margin-top: 20px;
+    margin-left: 10px;
+    padding: 8px;
+    border: 2px solid black;
+    border-radius: 10px;
+    display: inline-block;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* repsonsive ness */
+@media only screen and (max-width: 1000px) {
+    .nav-item a{
+       display: none;
+       transition: all ease 1s;
+    }
+    #twi{
+        display:inline;
+    }
+    .background-vid{
+       display: none;
+    }
+    .con1{
+        /* position: absolute;
+        top: 0;
+        bottom: 0; */
+        background-image: url('img/bg.jpg'); 
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        background-attachment:fixed; 
+        height: 100vh;
+        width: 100%;
+        /* position: fixed; */
+    }
+    .box{
+        margin-top: 30px;
+        height: 65vh;
+        width: 100%;
+        background-color: black;
+        display: block;
+        /* flex-direction: row; */
+        /* flex-wrap: wrap; */
+        justify-content: center;
+        align-items: center;
+    }
+    .about-me-box{
+        margin-top: 10px;
+        width: 80%;
+        overflow: hidden;
+        height: 60%;
+    }
+    .about-me-btn{
+        font-size: 18px;
+        height: 12vh;
+        width: 50%;
+    }
+ 
+  }
+
+  /* utility class */
+.text-center{
+    text-align: center;
+}
+.display-block{
+    display: inline-block;
+}
+.flex{
+    display: inline-flex;
+    flex-direction: column;
+}
+.border-sasuke{
+    border: 1.8px solid rgb(59, 59, 247)
+}
+.border-red{
+    border: 1px solid red;
+}
+.border-yellow{
+    border: 1px solid rgb(255, 251, 0);
+}
+.border-green{
+    border: 1px solid rgb(51, 255, 0);
+}
